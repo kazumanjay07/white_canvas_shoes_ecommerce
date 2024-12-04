@@ -1,0 +1,338 @@
+*{box-sizing: border-box}
+body{margin:0}
+ 
+ /* --------- Navigation ---------*/
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+	--light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: static;
+    top:0; left: 0; right:0;
+	background: I#fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:#27ae60;
+}
+
+
+header .navbar a{
+	text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+} 
+
+header .navbar #active{
+    color:black;
+    background: #DBE2EF;
+}
+
+.dropbtn {
+	padding:.5rem 1.5rem;
+	font-size: 1.1rem;
+	border: none;
+	cursor: pointer;
+	border-radius: .5rem;
+	background-color:white;
+	text-decoration: none;
+	color:var(--light-color);
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:20px;
+  background-color:#F9F7F7;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #DBE2EF; color:black; border-radius: .5rem;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #DBE2EF;
+  color:black;
+}
+
+header .icon-bar i,
+header .icon-bar a{
+    cursor: pointer;
+    height:2.5rem;
+    line-height: 2.5rem;
+    width:2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icon-bar i:hover,
+header .icon-bar a:hover{
+    color:#fff;
+    background: #3F72AF;
+    transform: rotate(360deg);
+}
+ /* --------- Navigation End ---------*/
+ 
+ /* --------- Footer -----------*/
+
+.container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+ul{
+    List-style: none;
+	padding-Left: 5px;
+}
+.footer{
+   background-color: #24262b;
+   padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+   font-size: 18px;
+   color: #ffffff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 500; 
+   position: relative; 
+}
+
+.footer-col h4::before{
+   content: '';
+   position: absolute;
+   Left:0;
+   bottom: -10px;
+   background-color: grey;
+   height: 2px;
+   box-sizing: border-box;
+   width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+   margin-bottom: 10px;
+}
+.footer-col ul li a{
+   font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+   font-weight: 300;
+   color: #bbbbbb;
+   display: block;
+   transition: all 0.3s ease; 
+}
+
+.footer-col ul li a:hover{
+   color: #ffffff;
+   padding-Left: 10px;
+}
+
+.footer-col .social-links a{
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: rgba(255,255,255,0.2);
+   margin:0 10px 10px 0;
+   text-align: center;
+   Line-height: 40px;
+   border-radius: 50%;
+   color: #ffffff;
+   transition: all 0.5s ease; 
+}
+
+.footer-col .social-links a:hover{
+   color: #24262b;
+   background-color: #ffffff;
+}
+
+/* --------- Footer End -----------*/
+
+
+/* --------- Sidebar -----------*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+/* --------- Sidebar End-----------*/
+
+/* --------- Main content -----------*/
+
+.main {
+  transition: margin-left .5s;
+  padding: 16px;
+  width:100%;
+  float: right;
+  height:1000px;
+
+}
+
+.InnerContainer{
+	width: 90%;
+	height: 60%;
+	margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	padding: 5px;
+
+}
+
+.RegisterDiv{
+	width:70%; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align:center;
+}
+
+ /* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: white;
+  
+  color: black;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field1{
+  width: 47.5%;
+  padding: 10px;
+  outline: none;
+  float:left;
+}
+
+.input-field2{
+  width: 47.5%;
+  padding: 10px;
+  outline: none;
+  float:right;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn{
+  display: inline-block;
+  padding: 10px 60px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3F72AF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+
+.btn:hover {
+  background-color: #112D4E; 
+  color: white;
+}
+

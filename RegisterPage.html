@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>	White Canvas | Register page</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="CSS/RegisterPage.css" type="text/css" />
+	</head>
+	
+	<body>
+		<!--------------------- Navigation -------------------->
+		<div>
+			<header>
+				<!-- company logo -->
+				<img src="Images/Image for users/WHITE CANVAS - LOGO.png" style="width:13%;"/>
+				
+				<!-- Navigation -->
+				<div>
+					<nav class="navbar">
+				
+						<a href="Index.html">Home</a>
+				
+						<div class="dropdown">
+							<button class="dropbtn">About</button>
+							<div class="dropdown-content">
+								<a href="AboutPage.html">About us</a>
+								<a href="DevTeam.html">Dev. team</a>	
+								<a href="FAQ.html">FAQ</a>
+								<a href="StoreLocation.html">Store location</a>
+								<a href="Contact.html">Contact </a>
+							</div>
+						</div>
+				
+						<div class="dropdown">
+							<button class="dropbtn">Men's</button>
+							<div class="dropdown-content">
+								<a href="MensCatalog - Lifestyle.html">Lifestyle</a>
+								<a href="MensCatalog - Running.html">Running</a>	
+								<a href="MensCatalog - Formal.html">Formal</a>
+								<a href="MensCatalog - Jordan.html">Jordan</a>
+							</div>
+						</div>
+				
+						<div class="dropdown">
+							<button class="dropbtn">Women's</button>
+							<div class="dropdown-content">
+								<a href="WomensCatalog - Lifestyle.html">Lifestyle</a>
+								<a href="WomensCatalog - Running.html">Running</a>	
+								<a href="WomensCatalog - Formal.html">Formal</a>
+								<a href="WomensCatalog - Jordan.html">Jordan</a>
+							</div>
+						</div>
+				
+						<div class="dropdown">
+							<button id="active" class="dropbtn">Login</button>
+							<div class="dropdown-content">
+								<a href="LoginPage.html">Login</a>
+								<a id="active" href="RegisterPage.html">Register</a>	
+							</div>
+						</div>
+					</nav>
+				</div>
+				
+				<!-- user icon -->
+				<div class="icon-bar">
+					<a class="actives" href="MyAccountPage.html"><i class="fa fa-user"></i></a>
+					<a href="#"><i class="fa fa-search" class="openBtn" onclick="openSearch()"></i></a>
+				</div>
+				
+			</header>
+		</div>
+		
+		<!-- Search bar -->
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+			<div class="overlay-content">
+				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+		
+		<br><br>
+		<!--------------------- Navigation End -------------------->
+		
+		<!--------------------- Register content -------------------->
+		
+		<div class="Container">
+			<div class="InnerContainer">
+				
+				<div style="width:30%; background-color:#DBE2EF; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> 
+					<img src="Images/Image for users/RegisterPageImage.png" style="width:100%; "/>
+				</div>
+				
+				<div class = "RegisterDiv"> 
+					<div style="width:80%;margin-left: auto; margin-right: auto; text-align:center"><br>
+						<h2 style="text-align:center">Register here</h2>
+					
+						<form action="/action_page.php">
+						
+								<div class="input-container">
+									<input class="input-field1" type="text" placeholder="Username" name="usrnm"> 
+									<div style="width:5%"></div>
+									<input class="input-field2" type="password" placeholder="Password" name="psw">
+								</div>
+						
+								<div class="input-container">
+									<input class="input-field1" type="text" placeholder="Full Name" name="usrnm"> 
+									<div style="width:5%"></div>
+									<input class="input-field2" type="text" placeholder="Phone Number" name="psw">
+								</div>
+								
+								<div class="input-container">
+									<input class="input-field1" type="text" placeholder="Birth Date" name="usrnm"> 
+									<div style="width:5%"></div>
+									<input class="input-field2" type="password" placeholder="Email" name="psw">
+								</div>
+								
+								<div class="input-container">
+									<input class="input-field1" type="text" placeholder="Address" name="usrnm"> 
+									<div style="width:5%"></div>
+									<input class="input-field2" type="password" placeholder="Poscode" name="psw">
+								</div>
+								
+								<div class="input-container">
+									<input class="input-field1" type="text" placeholder="City" name="usrnm"> 
+									<div style="width:5%"></div>
+									<input class="input-field2" type="password" placeholder="States" name="psw">
+								</div>
+								
+								<button type="submit" class="btn">Register</button>	
+						</form>
+					</div>
+					<br>
+					
+					<div><p>Already have an account?&#160 <a style="text-decoration:none" href="#">Login here</a> </p></div>
+				</div>
+			</div>
+		</div>
+		<!--------------------- Register content -------------------->
+		
+		<!--------------- Footer ---------------->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#"> About us </a></li>
+							<li><a href="#"> FAQ </a></li>
+							<li><a href="#"> Store location </a></li>
+							<li><a href="#"> Contact us </a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-col">
+						<h4>Products</h4>
+						<ul>
+							<li><a href="#"> Men's catalog </a></li>
+							<li><a href="#"> Women's catalog </a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-col">
+						<h4>Account</h4>
+						<ul>
+							<li><a href="#"> Log in </a></li>
+							<li><a href="#"> Register </a></li>
+						</ul>
+					</div>
+					
+					<div class="footer-col">
+						<h4>Follow us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr style="height:2px; background-color:grey;  width:100%; border:none;"> 
+				<p style="color:grey"> &copy; 2022 White Canvas, all rights reserved.</p>
+			</div>
+		</footer>
+		<!--------------- End of footer---------------->
+		
+		<script>
+		/*-------------------------- Search bar ------------------------------*/
+			function openSearch() {
+			document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function closeSearch() {
+			document.getElementById("myOverlay").style.display = "none";
+			}
+		/*-------------------------- Search bar end ------------------------------*/
+		</script>
+	</body>
+</html>
